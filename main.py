@@ -221,7 +221,7 @@ BRAIN = NinjaShapeBrain()
 app = FastAPI(title="NINJA CAPTCHA AI - PRO")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
-@app.post("/LAWISSI")
+@app.post("/")
 async def lawissi_endpoint(req: Request):
     """
     نقطة النهاية (Endpoint) التي يتصل بها السكريبت الخاص بك لحل الكابتشا
